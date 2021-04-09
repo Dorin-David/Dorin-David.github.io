@@ -1,0 +1,207 @@
+$redish: #de2f29;
+$grayish: #635f5f;
+
+// $icons: ('html': 'fab fa-html5', 'css': 'fab fa-css3-alt', 'js': 'fab fa-js-square', 'react': 'fab fa-react',
+//           'git': 'fab fa-git-alt', 'node': 'fab fa-node-js', 'github': 'fab fa-github-square', 'sass':'fab fa-sass');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background: #fcfafa;
+    position: relative;
+}
+
+.main-nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 1px 2px #ccc;
+    a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin: 0 10px;
+        color: inherit;
+    }
+    a:hover {
+        cursor: pointer;
+        color: $redish;
+    }
+    a::before {
+        font-size: 1.2rem;
+        content: "\\ ";
+        color: $redish;
+    }
+}
+
+.main-header {
+    width: 700px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 3.4rem;
+    position: absolute;
+    top: 290px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+}
+
+.intro-img {
+    width: 100%;
+    height: 600px;
+    margin-top: 10px;
+    background: rgba(1, 1, 1, 0.9) url("../assets/images/code_background.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+}
+
+hr {
+    color: $redish;
+    margin: 10px;
+}
+
+h1 {
+    width: 400px;
+    margin: 20px auto;
+    padding: 5px;
+    background: #121212;
+    border-radius: 4px;
+    color: white;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+span {
+    color: $redish;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 10px 20px;
+    line-height: 1.5;
+    color: $grayish;
+}
+
+.skills {
+    border-radius: 4px;
+    margin: 10px auto;
+    width: 80%;
+    padding: 10px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.skills > li {
+    list-style: none;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    i {
+        font-size: 3rem;
+        color: $redish;
+        transition: transform 0.2s ease-in;
+    }
+    p {
+        font-size: 1.6rem;
+    }
+    i:hover {
+        transform: scale(1.2);
+    }
+}
+
+.projects-grid {
+    width: 80%;
+    height: 700px;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "book-shop book-shop burger burger"
+        "book-shop book-shop burger burger"
+        "  to-do     to-do     .       ."
+        "  to-do     to-do     .       .";
+    gap: 15px;
+    box-shadow: 0 1px 1px #ccc, 0 -1px 1px #ccc, -1px 0 1px #ccc, 1px 0 1px #ccc;
+    
+    .book-shop {
+        grid-area: book-shop;
+        background: #fff url("../assets/images/book_shop.PNG");
+    }
+    .burger-builder {
+        grid-area: burger;
+        background: #fff url("../assets/images/burger_builder.PNG");
+    }
+    .to-do-list {
+        grid-area: to-do;
+        background: #fff url("../assets/images/to_do_list.PNG");
+    }
+    .book-shop,
+    .burger-builder,
+    .to-do-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border-radius: 4px;
+        transition: transform 0.4s ease-in;
+        box-shadow: 0 1px 1px #ccc, 0 -1px 1px #ccc, -1px 0 1px #ccc, 1px 0 1px #ccc;
+    }
+
+
+    .book-shop:hover,
+    .burger-builder:hover,
+    .to-do-list:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        .project-description {
+            height: 50%;
+        }
+    }
+}
+
+.project-description{
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: height .4s .2s ease-in;
+   h2 {
+       text-align: center;
+       letter-spacing: 1px;
+       color: $redish;
+   }
+   a {
+       display: inline-block;
+       text-decoration: none;
+       color: $redish;
+       transition: text-decoration .2s ease-in;
+   }
+  a:hover {
+      text-decoration: underline solid $redish;
+  }
+}
