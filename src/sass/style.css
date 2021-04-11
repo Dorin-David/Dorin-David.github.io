@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -13,7 +14,7 @@ body {
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  background: #fcfafa;
+  background: #fcf7f7;
   position: relative;
 }
 
@@ -41,40 +42,51 @@ body {
   color: #de2f29;
 }
 
-.main-header {
-  width: 700px;
-  padding: 40px;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 4px;
-  color: #fff;
-  font-size: 3.4rem;
-  position: absolute;
-  top: 290px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: 2;
-}
-
-.intro-img {
-  width: 100%;
-  height: 600px;
-  margin-top: 10px;
-  background: rgba(1, 1, 1, 0.9) url("../assets/images/code_background.PNG");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-repeat: no-repeat;
-  filter: blur(3px);
-}
-
-hr {
+.hero-header {
+  font-size: 3rem;
+  text-align: center;
   color: #de2f29;
-  margin: 10px;
 }
 
-h1 {
+.intro-card {
+  width: 90%;
+  height: 350px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.intro-card .intro-picture {
+  background: url("C:UsersUserÞsktopPortfoliosrc\assetsimages\dorin_David.jpg");
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-radius: 50%;
+  background-position: left -60px;
+}
+.intro-card .intro-description {
+  margin-right: 50px;
+}
+.intro-card .intro-description h1 {
+  margin: 0;
+  color: #de2f29;
+}
+.intro-card .intro-description span {
+  font-size: 1.5rem;
+  color: #635f5f;
+}
+.intro-card .intro-description p {
+  font-size: 1.5rem;
+  color: #de2f29;
+}
+.intro-card .intro-description hr {
+  margin: 0;
+  width: 390px;
+  color: #de2f29;
+}
+
+.section-header {
   width: 400px;
-  margin: 20px auto;
+  margin: 45px auto;
   padding: 5px;
   background: #121212;
   border-radius: 4px;
@@ -83,15 +95,15 @@ h1 {
   text-align: center;
 }
 
-span {
-  color: #de2f29;
-}
-
 p {
+  width: 80%;
+  margin: 10px auto;
   font-size: 1.2rem;
-  margin: 10px 20px;
-  line-height: 1.5;
   color: #635f5f;
+  line-height: 1.5;
+}
+p span {
+  color: #de2f29;
 }
 
 .skills {
@@ -119,7 +131,9 @@ p {
   transition: transform 0.2s ease-in;
 }
 .skills > li p {
+  width: initial;
   font-size: 1.6rem;
+  margin: initial;
 }
 .skills > li i:hover {
   transform: scale(1.2);
@@ -129,6 +143,7 @@ p {
   width: 80%;
   height: 700px;
   margin: auto;
+  margin-bottom: 40px;
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -194,6 +209,20 @@ p {
 }
 .project-description a:hover {
   text-decoration: underline solid #de2f29;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer i {
+  margin: 0 15px;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
