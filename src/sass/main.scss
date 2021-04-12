@@ -11,6 +11,7 @@ html,
 body {
     width: 100%;
     height: 100%;
+    min-width: 300px;
 }
 body {
     margin: 0;
@@ -72,6 +73,8 @@ body {
     background-position: left -60px;
     @media (max-width: 900px){
         margin: auto;
+        width: 300px;
+        height: 300px;
     }
 
 }
@@ -140,6 +143,9 @@ p {
     height: 400px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    @media (max-width: 500px){
+        width: 100%;
+    }
 }
 
 .skills > li {
@@ -212,15 +218,15 @@ p {
 
 .book-shop {
     grid-area: book-shop;
-    background: #fff url("../../src/assets/images/book_shop.PNG");
+    background: transparent url("../../src/assets/images/book_shop.PNG");
 }
 .burger-builder {
     grid-area: burger;
-    background: #fff url("../../src/assets/images/burger_builder.PNG");
+    background: transparent url("../../src/assets/images/burger_builder.PNG");
 }
 .to-do-list {
     grid-area: to-do;
-    background: #fff url("../../src/assets/images/to_do_list.PNG");
+    background: transparent url("../../src/assets/images/to_do_list.PNG");
 }
 
 .book-shop,
@@ -230,14 +236,11 @@ p {
     flex-direction: column;
     justify-content: end;
     align-items: center;
-    background-size: 100% 100%;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     border-radius: 4px;
     transition: transform 0.4s ease-in;
-    box-shadow: 0 1px 1px #ccc, 0 -1px 1px #ccc, -1px 0 1px #ccc, 1px 0 1px #ccc;
-    @media (min-width: 1101px) and (max-width: 1350px) {
-        background-size: 100% 80%;
-    }
 }
 
 .book-shop:hover,
@@ -250,7 +253,7 @@ p {
     }
     @media (max-width: 700px) {
         .project-description {
-            height: 70%;
+            height: 90%;
         }
     }
 }
@@ -281,6 +284,11 @@ p {
         }
         p {
             font-size: 1rem;
+        }
+    }
+    @media (max-width: 500px){
+        p {
+            font-size: .9rem;
         }
     }
 }
