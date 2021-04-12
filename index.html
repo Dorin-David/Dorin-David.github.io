@@ -12,40 +12,55 @@
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <!-- style -->
-    <link rel="stylesheet" href="./src/sass/style.css">
+    <link rel="stylesheet" href="./public/style/style.css">
 </head>
 
 <body>
     <nav class='main-nav'>
         <a href="">About</a>
-        <a href="">Projects</a>
-        <a href="">Contacts</a>
+        <a href="#projects">Projects</a>
+        <a href="#contacts">Contacts</a>
     </nav>
 
     <main>
         <section class='intro'>
-            <h1 class="main-header">Let me tell your <span>story...</span></h1>
-            <div class="intro-img"> </div>
-            <hr>
+            <h1 class='hero-header'>Hi there! Can I tell your story?</h1>
+            <div class="intro-card">
+                <div class="intro-description">
+                    <h1>Dorin David - <span>Frontend developer</span></h1>
+                    <hr>
+                    <p>Lets have a walk together</p>
+                </div>
+                <div class="intro-picture"></div>
+
+            </div>
+
+            <h1 class="section-header">About</h1>
             <p> During the last year (a challenging year for all of us!), I discovered a brand new world... coding.
-                From the very basics of HTML, I became passionate from day one, and since then I've been study hard,
-                every day, to get better,
-                so I could do what I've always loved to do: tell stories. <span>Your story<span>.
+                From the very basics of HTML, to CSS and JavaScript, I became passionate from day one, and since then
+                I've been study hard,
+                every day, to get better, so I could do what I've always loved to do: tell stories. <span>Your
+                    story<span>.
             </p>
-            <h1>How can I be <span>useful</span>?</h1>
+            <h1 class="section-header">How can I be useful?</h1>
 
             <p> What can I offer is sheer passion, commitment, and trust. You can be sure I will always be in the first
-                line, striving to make
-                your vision real, and share it with the world. Listening and serving people it's what I always did for a
-                living; people from
-                all around the world, from all kind of backgrounds. I'll make sure your story is well told, and not just
-                in one language.
+                line, striving to make your vision real, and share it with the world. Listening and serving people it's
+                what
+                I always did for a living; people from all around the world, from all kind of backgrounds. I'll make
+                sure
+                your story is well told in all the languages and ways I know.
             </p>
         </section>
 
 
         <section class='skills-section'>
-            <h1>Technical skills:</h1>
+            <h1 class="section-header">My backpack</h1>
+            <p>
+                In this long travel, I bring a backpack that I constantly refill or empty depending on the challenges
+                ahead.I will share them with you, hoping you will find them useful too; and if not, that we can review what's
+                in... <span>together</span>.
+            </p>
             <ul class='skills'>
                 <li class='html'><i class='fab fa-html5'></i>
                     <p>HTML</p>
@@ -74,47 +89,53 @@
             </ul>
         </section>
 
-        <section class='projects-section'>
-            <h1>My projects</h1>
-            <p>Check out some of my latest projects.</p>
+        <section class='projects-section' id='projects'>
+            <h1 class="section-header">My projects</h1>
             <div class="projects-grid">
-                <div class="book-shop">
+                <div class="book-shop" role="img" aria-label="book shop project">
                     <div class="project-description">
                         <h2>Book shop</h2>
                         <p>A book shop built with React. My first React project.
-                            <a href="https://github.com/Dorin-David/React-book-shop">Source code on Github</a>
+                            <a href="https://github.com/Dorin-David/React-book-shop" target="_blank">Source code on Github</a>
                         </p>
                     </div>
                 </div>
-                <div class="burger-builder">
+                <div class="burger-builder" role="img" aria-label="burger builder project">
                     <div class="project-description">
                         <h2>Burger builder</h2>
-                        <p>A burger builder application built with React. It saves and retrieves orders from a server.
-                            <a href="https://github.com/Dorin-David/burger-builder">Source code on Github</a>
+                        <p>A burger builder application built with React and Redux. It saves and retrieves orders from a server.
+                            <a href="https://github.com/Dorin-David/burger-builder" target="_blank">Source code on Github</a>
                         </p>
 
                     </div>
                 </div>
-                <div class="to-do-list">
+                <div class="to-do-list" role="img" aria-label="to do list project" target="_blank">
                     <div class="project-description">
                         <h2>To do list</h2>
-                        <p>A to do (or not to do) application built with React. It can be used in a single session, or
-                            after
-                            authentication, so the user doesn't lose its previous data.
+                        <p>A to do (or not to do) application built with React. Accepts authentication.
                             <a href="https://github.com/Dorin-David/burger-builder">Source code on Github</a>
                         </p>
 
                     </div>
                 </div>
             </div>
+            <p>
+                Along with these tools, for our travel I carry nice food, fresh water and a couple of other things that we can share when we're not walking, 
+                climbing or swimming (all things I love) through the endless possibilities of this vast world. I'm <span>storyteller</span>; in a professional way, 
+                with my background as a salesman, and artistical, through writing and music. I bring an atmosphere of <span>energy</span> and <span>humor</span>. 
+                Together with <span>trust</span>, a strong <span>will to learn</span>, <span>flexibility</span> and <span>empathy</span>, I believe this is the recipe for overcoming any challenge. 
+                 Well, enough
+                about me for now; the sun is high, a gentle fresh breeze blows; I will tell you more while we walk, if
+                you wish. What about you? How can we help each other?
+                How can we grow together? I'm looking forward to discover what can you teach me.
+            </p>
         </section>
-
-
-
-        <h1>Soft skills</h1>
-
     </main>
-
+    <footer id='contacts'>
+        <a href="https://www.linkedin.com/in/dorin-david-bb0133137/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Dorin-David" target="_blank"> <i class='fab fa-github-square'></i></a>
+        <a href="mailto:doriodavid@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+    </footer>
 </body>
 
 </html>
