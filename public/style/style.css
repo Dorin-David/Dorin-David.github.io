@@ -37,7 +37,7 @@ body {
   margin: 0 10px;
   color: inherit;
 }
-.main-nav a:hover {
+.main-nav a:hover, .main-nav a:active {
   cursor: pointer;
   color: #de2f29;
 }
@@ -200,7 +200,7 @@ p span {
     font-size: 1.2rem;
   }
 }
-.skills > li i:hover {
+.skills > li i:hover, .skills > li i:active {
   transform: scale(1.2);
 }
 
@@ -270,24 +270,24 @@ p span {
   transition: transform 0.4s ease-in;
 }
 
-.book-shop:hover,
-.burger-builder:hover,
-.to-do-list:hover,
-.weather_app:hover {
+.book-shop:hover, .book-shop:active,
+.burger-builder:hover, .burger-builder:active .to-do-list:hover,
+.to-do-list:active .weather_app:hover,
+.weather_app:active {
   cursor: pointer;
   transform: scale(1.1);
 }
-.book-shop:hover .project-description,
-.burger-builder:hover .project-description,
-.to-do-list:hover .project-description,
-.weather_app:hover .project-description {
+.book-shop:hover .project-description, .book-shop:active .project-description,
+.burger-builder:hover .project-description, .burger-builder:active .to-do-list:hover .project-description,
+.to-do-list:active .weather_app:hover .project-description,
+.weather_app:active .project-description {
   height: 50%;
 }
 @media (max-width: 700px) {
-  .book-shop:hover .project-description,
-.burger-builder:hover .project-description,
-.to-do-list:hover .project-description,
-.weather_app:hover .project-description {
+  .book-shop:hover .project-description, .book-shop:active .project-description,
+.burger-builder:hover .project-description, .burger-builder:active .to-do-list:hover .project-description,
+.to-do-list:active .weather_app:hover .project-description,
+.weather_app:active .project-description {
     height: 90%;
   }
 }

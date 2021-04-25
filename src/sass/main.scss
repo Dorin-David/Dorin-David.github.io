@@ -38,7 +38,7 @@ body {
         margin: 0 10px;
         color: inherit;
     }
-    a:hover {
+    a:hover, a:active {
         cursor: pointer;
         color: $redish;
     }
@@ -186,7 +186,7 @@ p {
             font-size: 1.2rem;
         }
     }
-    i:hover {
+    i:hover, i:active {
         transform: scale(1.2);
     }
 }
@@ -267,10 +267,10 @@ p {
     transition: transform 0.4s ease-in;
 }
 
-.book-shop:hover, 
-.burger-builder:hover,
-.to-do-list:hover,
-.weather_app:hover {
+.book-shop:hover, .book-shop:active,
+.burger-builder:hover, .burger-builder:active
+.to-do-list:hover, .to-do-list:active
+.weather_app:hover, .weather_app:active {
     cursor: pointer;
     transform: scale(1.1);
     .project-description {
