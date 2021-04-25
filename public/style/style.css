@@ -270,24 +270,37 @@ p span {
   transition: transform 0.4s ease-in;
 }
 
-.book-shop:hover, .book-shop:active,
-.burger-builder:hover, .burger-builder:active .to-do-list:hover,
-.to-do-list:active .weather_app:hover,
-.weather_app:active {
+.active {
   cursor: pointer;
   transform: scale(1.1);
 }
-.book-shop:hover .project-description, .book-shop:active .project-description,
-.burger-builder:hover .project-description, .burger-builder:active .to-do-list:hover .project-description,
-.to-do-list:active .weather_app:hover .project-description,
-.weather_app:active .project-description {
+.active .project-description {
   height: 50%;
 }
 @media (max-width: 700px) {
-  .book-shop:hover .project-description, .book-shop:active .project-description,
-.burger-builder:hover .project-description, .burger-builder:active .to-do-list:hover .project-description,
-.to-do-list:active .weather_app:hover .project-description,
-.weather_app:active .project-description {
+  .active .project-description {
+    height: 90%;
+  }
+}
+
+.book-shop:hover,
+.burger-builder:hover,
+.to-do-list:hover,
+.weather_app:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.book-shop:hover .project-description,
+.burger-builder:hover .project-description,
+.to-do-list:hover .project-description,
+.weather_app:hover .project-description {
+  height: 50%;
+}
+@media (max-width: 700px) {
+  .book-shop:hover .project-description,
+.burger-builder:hover .project-description,
+.to-do-list:hover .project-description,
+.weather_app:hover .project-description {
     height: 90%;
   }
 }

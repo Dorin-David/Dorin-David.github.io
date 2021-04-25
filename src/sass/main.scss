@@ -267,10 +267,25 @@ p {
     transition: transform 0.4s ease-in;
 }
 
-.book-shop:hover, .book-shop:active,
-.burger-builder:hover, .burger-builder:active
-.to-do-list:hover, .to-do-list:active
-.weather_app:hover, .weather_app:active {
+//below class outsourced
+
+.active {
+    cursor: pointer;
+    transform: scale(1.1);
+    .project-description {
+        height: 50%;
+    }
+    @media (max-width: 700px) {
+        .project-description {
+            height: 90%;
+        }
+    }
+}
+
+.book-shop:hover,
+.burger-builder:hover, 
+.to-do-list:hover, 
+.weather_app:hover {
     cursor: pointer;
     transform: scale(1.1);
     .project-description {
