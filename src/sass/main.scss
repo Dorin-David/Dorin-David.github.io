@@ -26,6 +26,11 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: inherit;
     box-shadow: 0 1px 2px #ccc;
     a {
         text-decoration: none;
@@ -42,6 +47,15 @@ body {
         content: "\\ ";
         color: $redish;
     }
+}
+
+.intro {
+    margin-top: 100px;
+}
+
+#about, 
+#projects {
+    padding-top: 40px;
 }
 
 .hero-header {
@@ -65,7 +79,7 @@ body {
 }
 
 .intro-picture {
-    background: url("../../src/assets/images/Dorin_David.jpg");
+    background: url("../../public/images/Dorin_David.jpg");
     width: 350px;
     height: 350px;
     background-size: cover;
@@ -187,25 +201,29 @@ p {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
-        "book-shop book-shop burger burger"
-        "book-shop book-shop burger burger"
-        "  to-do     to-do     .       ."
-        "  to-do     to-do     .       .";
+        "book-shop book-shop weather weather"
+        "book-shop book-shop weather weather"
+        "  to-do     to-do   burger burger"
+        "  to-do     to-do   burger burger";
     gap: 15px;
     box-shadow: 0 1px 1px #ccc, 0 -1px 1px #ccc, -1px 0 1px #ccc, 1px 0 1px #ccc;
     @media (max-width: 1100px) {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(9, 100px);
+        grid-template-rows: repeat(12, 100px);
         grid-template-areas:
             "book-shop"
             "book-shop"
             "book-shop"
+            "weather"
+            "weather"
+            "weather"
             "burger"
             "burger"
             "burger"
             "to-do"
             "to-do"
-            "to-do";
+            "to-do"
+            ;
     }
 
     @media (max-width: 700px) {
@@ -218,20 +236,26 @@ p {
 
 .book-shop {
     grid-area: book-shop;
-    background: transparent url("../../src/assets/images/book_shop.PNG");
+    background: transparent url("../../public/images/book_shop.PNG");
 }
 .burger-builder {
     grid-area: burger;
-    background: transparent url("../../src/assets/images/burger_builder.PNG");
+    background: transparent url("../../public/images/burger_builder.PNG");
 }
 .to-do-list {
     grid-area: to-do;
-    background: transparent url("../../src/assets/images/to_do_list.PNG");
+    background: transparent url("../../public/images/to_do_list.PNG");
+}
+
+.weather_app {
+    grid-area: weather;
+    background:  transparent url("../../public/images/weather_app.PNG");
 }
 
 .book-shop,
 .burger-builder,
-.to-do-list {
+.to-do-list,
+.weather_app {
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -245,7 +269,8 @@ p {
 
 .book-shop:hover, 
 .burger-builder:hover,
-.to-do-list:hover {
+.to-do-list:hover,
+.weather_app:hover {
     cursor: pointer;
     transform: scale(1.1);
     .project-description {
