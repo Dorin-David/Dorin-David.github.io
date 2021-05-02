@@ -12,6 +12,7 @@
     "gulp-imagemin": "^7.1.0"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "gulp": "^4.0.2"
   }
 }

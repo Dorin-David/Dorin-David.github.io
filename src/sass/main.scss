@@ -79,7 +79,7 @@ body {
 }
 
 .intro-picture {
-    background: url("../../public/images/Dorin_David.jpg");
+    background: url("../images/Dorin_David.jpg");
     width: 350px;
     height: 350px;
     background-size: cover;
@@ -236,20 +236,20 @@ p {
 
 .book-shop {
     grid-area: book-shop;
-    background: transparent url("../../public/images/book_shop.PNG");
+    background: transparent url("../images/book_shop.PNG");
 }
 .burger-builder {
     grid-area: burger;
-    background: transparent url("../../public/images/burger_builder.PNG");
+    background: transparent url("../images/burger_builder.PNG");
 }
 .to-do-list {
     grid-area: to-do;
-    background: transparent url("../../public/images/to_do_list.PNG");
+    background: transparent url("../images/to_do_list.PNG");
 }
 
 .weather_app {
     grid-area: weather;
-    background:  transparent url("../../public/images/weather_app.PNG");
+    background:  transparent url("../images/weather_app.PNG");
 }
 
 .book-shop,
