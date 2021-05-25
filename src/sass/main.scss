@@ -16,7 +16,7 @@ body {
 body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
-    background: #fcf7f7;
+    // background: #fcf7f7;
     position: relative;
 }
 
@@ -30,7 +30,7 @@ body {
     top: 0;
     left: 0;
     z-index: 100;
-    background: inherit;
+    background: #fff;
     box-shadow: 0 1px 2px #ccc;
     a {
         text-decoration: none;
@@ -201,25 +201,25 @@ p {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
-        "book-shop book-shop weather weather"
-        "book-shop book-shop weather weather"
-        "  to-do     to-do   burger burger"
-        "  to-do     to-do   burger burger";
+        "blog blog weather weather"
+        "blog blog weather weather"
+        "  to-do     to-do   book-shop book-shop"
+        "  to-do     to-do   book-shop book-shop";
     gap: 15px;
     box-shadow: 0 1px 1px #ccc, 0 -1px 1px #ccc, -1px 0 1px #ccc, 1px 0 1px #ccc;
     @media (max-width: 1100px) {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12, 100px);
         grid-template-areas:
+            "blog"
+            "blog"
+            "blog"
             "book-shop"
             "book-shop"
             "book-shop"
             "weather"
             "weather"
             "weather"
-            "burger"
-            "burger"
-            "burger"
             "to-do"
             "to-do"
             "to-do"
@@ -238,9 +238,9 @@ p {
     grid-area: book-shop;
     background: transparent url("../images/book_shop.PNG");
 }
-.burger-builder {
-    grid-area: burger;
-    background: transparent url("../images/burger_builder.PNG");
+.blog {
+    grid-area: blog;
+    background: transparent url("../images/blog.PNG");
 }
 .to-do-list {
     grid-area: to-do;
@@ -253,7 +253,7 @@ p {
 }
 
 .book-shop,
-.burger-builder,
+.blog,
 .to-do-list,
 .weather_app {
     display: flex;
@@ -283,7 +283,7 @@ p {
 }
 
 .book-shop:hover,
-.burger-builder:hover, 
+.blog:hover, 
 .to-do-list:hover, 
 .weather_app:hover {
     cursor: pointer;
