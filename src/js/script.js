@@ -1,5 +1,7 @@
 let projects = document.querySelectorAll('.project');
 
+alert('hello')
+
 function showDescription(){
     this.classList.toggle('active')
 }

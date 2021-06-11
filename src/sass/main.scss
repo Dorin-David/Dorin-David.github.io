@@ -1,5 +1,7 @@
 $redish: #de2f29;
 $grayish: #635f5f;
+$linkedin-clr: #0a66c2;
+$github-clr: hsla(0, 0%, 100%, .7);
 
 *,
 *::before,
@@ -15,8 +17,7 @@ body {
 }
 body {
     margin: 0;
-    font-family: "Open Sans", sans-serif;
-    // background: #fcf7f7;
+    font-family: "Sarala", sans-serif;
     position: relative;
 }
 
@@ -73,7 +74,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    @media (max-width: 900px){
+    @media (max-width: 950px){
         display: initial;
     }
 }
@@ -85,8 +86,9 @@ body {
     background-size: cover;
     border-radius: 50%;
     background-position: left -60px;
-    @media (max-width: 900px){
+    @media (max-width: 950px){
         margin: auto;
+        margin-top: 1rem;
         width: 300px;
         height: 300px;
     }
@@ -97,11 +99,12 @@ body {
     margin-right: 50px;
     h1 {
         margin: 0;
+        font-size: 2rem;
         color: $redish;
     }
     span {
         font-size: 1.3rem;
-        color: $grayish;
+        color: #de302a;
     }
     p {
         font-size: 1.5rem;
@@ -110,15 +113,19 @@ body {
     hr {
         margin: 0;
         width: 390px;
-        color: #de2f29;
+        color: $redish;
     }
-    @media (max-width: 900px){
+    @media (max-width: 950px){
         margin: initial;
         * {
             text-align: center;
         }
         hr {
             margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 1.6rem;
         }
     }
 }
@@ -130,7 +137,7 @@ body {
     background: #121212;
     border-radius: 4px;
     color: white;
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     text-align: center;
     @media (max-width: 700px) {
         width: 250px;
@@ -182,7 +189,7 @@ p {
         width: initial;
         font-size: 1.6rem;
         margin: initial;
-        @media (max-width: 900px) {
+        @media (max-width: 950px) {
             font-size: 1.2rem;
         }
     }
@@ -193,67 +200,42 @@ p {
 
 .projects-grid {
     width: 80%;
-    min-height: 700px;
     margin: auto;
     margin-bottom: 40px;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas:
-        "blog blog weather weather"
-        "blog blog weather weather"
-        "  to-do     to-do   book-shop book-shop"
-        "  to-do     to-do   book-shop book-shop";
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
     gap: 15px;
-    box-shadow: 0 1px 1px #ccc, 0 -1px 1px #ccc, -1px 0 1px #ccc, 1px 0 1px #ccc;
     @media (max-width: 1100px) {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(12, 100px);
-        grid-template-areas:
-            "blog"
-            "blog"
-            "blog"
-            "book-shop"
-            "book-shop"
-            "book-shop"
-            "weather"
-            "weather"
-            "weather"
-            "to-do"
-            "to-do"
-            "to-do"
-            ;
+        grid-template-columns: 1fr;  
     }
-
-    @media (max-width: 700px) {
-        grid-template-rows: repeat(9, 60px);
-    }
-    @media (max-width: 500px) {
-        grid-template-rows: repeat(9, 50px);
-    }
+}
+.blog {
+    background: #fff url("../images/blog.PNG");
 }
 
 .book-shop {
-    grid-area: book-shop;
-    background: transparent url("../images/book_shop.PNG");
+    background: #fff url("../images/book_shop.PNG");
 }
-.blog {
-    grid-area: blog;
-    background: transparent url("../images/blog.PNG");
+
+.js-quiz {
+    background: #fff url("../images/javascript_quiz.PNG");
 }
+
 .to-do-list {
-    grid-area: to-do;
-    background: transparent url("../images/to_do_list.PNG");
+    background: #fff url("../images/to_do_list.PNG");
 }
 
 .weather_app {
-    grid-area: weather;
-    background:  transparent url("../images/weather_app.PNG");
+    background:  #fff url("../images/weather_app.PNG");
 }
 
-.book-shop,
+
+
 .blog,
+.book-shop,
+.js-quiz,
 .to-do-list,
 .weather_app {
     display: flex;
@@ -263,11 +245,9 @@ p {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 4px;
+    border-bottom: 2px solid #ccc;
     transition: transform 0.4s ease-in;
 }
-
-//below class outsourced
 
 .active {
     cursor: pointer;
@@ -277,13 +257,15 @@ p {
     }
     @media (max-width: 700px) {
         .project-description {
-            height: 90%;
+            height: 70%;
         }
     }
 }
 
-.book-shop:hover,
+
 .blog:hover, 
+.book-shop:hover,
+.js-quiz:hover,
 .to-do-list:hover, 
 .weather_app:hover {
     cursor: pointer;
@@ -326,11 +308,6 @@ p {
             font-size: 1rem;
         }
     }
-    @media (max-width: 500px){
-        p {
-            font-size: .9rem;
-        }
-    }
 }
 
 footer {
@@ -342,8 +319,21 @@ footer {
     justify-content: center;
     align-items: center;
     i {
+        cursor: pointer;
         margin: 0 15px;
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: #fff;
     }
+}
+
+.linkedin:hover {
+   color: $linkedin-clr
+}
+
+.github:hover {
+    color: $github-clr;
+}
+
+.email:hover {
+    color: $redish;
 }
