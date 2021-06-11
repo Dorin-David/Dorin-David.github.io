@@ -8,7 +8,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-  min-width: 300px;
 }
 
 body {
@@ -27,7 +26,7 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 1px 2px #ccc;
 }
 .main-nav a {
@@ -36,7 +35,8 @@ body {
   margin: 0 10px;
   color: inherit;
 }
-.main-nav a:hover, .main-nav a:active {
+.main-nav a:hover,
+.main-nav a:active {
   cursor: pointer;
   color: #de2f29;
 }
@@ -80,7 +80,7 @@ body {
 }
 
 .intro-picture {
-  background: url("../images/Dorin_David.jpg");
+  background: url("/images/Dorin_David.jpg");
   width: 350px;
   height: 350px;
   background-size: cover;
@@ -106,6 +106,7 @@ body {
 }
 .intro-description span {
   font-size: 1.3rem;
+  font-weight: 400;
   color: #de302a;
 }
 .intro-description p {
@@ -160,54 +161,6 @@ p span {
   color: #de2f29;
 }
 
-.skills {
-  border-radius: 4px;
-  margin: 10px auto;
-  width: 80%;
-  padding: 10px;
-  height: 400px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-@media (max-width: 500px) {
-  .skills {
-    width: 100%;
-  }
-}
-
-.skills > li {
-  list-style: none;
-  font-size: 1.5rem;
-  margin-top: 10px;
-  margin-left: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media (max-width: 700px) {
-  .skills > li {
-    margin-left: 15px;
-  }
-}
-.skills > li i {
-  font-size: 3rem;
-  color: #de2f29;
-  transition: transform 0.2s ease-in;
-}
-.skills > li p {
-  width: initial;
-  font-size: 1.6rem;
-  margin: initial;
-}
-@media (max-width: 950px) {
-  .skills > li p {
-    font-size: 1.2rem;
-  }
-}
-.skills > li i:hover, .skills > li i:active {
-  transform: scale(1.2);
-}
-
 .projects-grid {
   width: 80%;
   margin: auto;
@@ -223,32 +176,33 @@ p span {
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 700px) {
+  .projects-grid {
+    grid-auto-rows: 200px;
+  }
+}
 
 .blog {
-  background: #fff url("../images/blog.PNG");
+  background: #fff url("/images/blog.PNG");
 }
 
 .book-shop {
-  background: #fff url("../images/book_shop.PNG");
+  background: #fff url("/images/book_shop.PNG");
 }
 
 .js-quiz {
-  background: #fff url("../images/javascript_quiz.PNG");
+  background: #fff url("/images/javascript_quiz.PNG");
 }
 
 .to-do-list {
-  background: #fff url("../images/to_do_list.PNG");
+  background: #fff url("/images/to_do_list.PNG");
 }
 
 .weather_app {
-  background: #fff url("../images/weather_app.PNG");
+  background: #fff url("/images/weather_app.PNG");
 }
 
-.blog,
-.book-shop,
-.js-quiz,
-.to-do-list,
-.weather_app {
+.project {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -258,6 +212,19 @@ p span {
   background-position: center;
   border-bottom: 2px solid #ccc;
   transition: transform 0.4s ease-in;
+}
+
+.project:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.project:hover .project-description {
+  height: 50%;
+}
+@media (max-width: 700px) {
+  .project:hover .project-description {
+    height: 70%;
+  }
 }
 
 .active {
@@ -273,37 +240,12 @@ p span {
   }
 }
 
-.blog:hover,
-.book-shop:hover,
-.js-quiz:hover,
-.to-do-list:hover,
-.weather_app:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-.blog:hover .project-description,
-.book-shop:hover .project-description,
-.js-quiz:hover .project-description,
-.to-do-list:hover .project-description,
-.weather_app:hover .project-description {
-  height: 50%;
-}
-@media (max-width: 700px) {
-  .blog:hover .project-description,
-.book-shop:hover .project-description,
-.js-quiz:hover .project-description,
-.to-do-list:hover .project-description,
-.weather_app:hover .project-description {
-    height: 90%;
-  }
-}
-
 .project-description {
   width: 100%;
   height: 70px;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.7);
-  transition: height 0.4s 0.2s ease-in;
+  transition: height 0.3s 0.2s ease-in;
 }
 .project-description h2 {
   text-align: center;
@@ -337,23 +279,20 @@ footer {
   justify-content: center;
   align-items: center;
 }
-footer i {
-  cursor: pointer;
+footer .contact-icon {
   margin: 0 15px;
-  font-size: 2rem;
-  color: #fff;
 }
 
-.linkedin:hover {
-  color: #0a66c2;
+.linkedin:hover svg {
+  stroke: #0a66c2;
 }
 
-.github:hover {
-  color: rgba(255, 255, 255, 0.7);
+.github:hover svg {
+  stroke: rgba(255, 255, 255, 0.7);
 }
 
-.email:hover {
-  color: #de2f29;
+.email:hover svg {
+  stroke: #de2f29;
 }
 
 /*# sourceMappingURL=style.css.map */

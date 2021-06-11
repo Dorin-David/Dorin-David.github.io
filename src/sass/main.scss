@@ -13,7 +13,6 @@ html,
 body {
     width: 100%;
     height: 100%;
-    min-width: 300px;
 }
 body {
     margin: 0;
@@ -31,7 +30,7 @@ body {
     top: 0;
     left: 0;
     z-index: 100;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 1px 2px #ccc;
     a {
         text-decoration: none;
@@ -39,7 +38,8 @@ body {
         margin: 0 10px;
         color: inherit;
     }
-    a:hover, a:active {
+    a:hover, 
+    a:active {
         cursor: pointer;
         color: $redish;
     }
@@ -80,7 +80,7 @@ body {
 }
 
 .intro-picture {
-    background: url("../images/Dorin_David.jpg");
+    background: url("/images/Dorin_David.jpg");
     width: 350px;
     height: 350px;
     background-size: cover;
@@ -104,6 +104,7 @@ body {
     }
     span {
         font-size: 1.3rem;
+        font-weight: 400;
         color: #de302a;
     }
     p {
@@ -156,48 +157,6 @@ p {
     }
 }
 
-.skills {
-    border-radius: 4px;
-    margin: 10px auto;
-    width: 80%;
-    padding: 10px;
-    height: 400px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    @media (max-width: 500px){
-        width: 100%;
-    }
-}
-
-.skills > li {
-    list-style: none;
-    font-size: 1.5rem;
-    margin-top: 10px;
-    margin-left: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media (max-width: 700px) {
-        margin-left: 15px;
-    }
-    i {
-        font-size: 3rem;
-        color: $redish;
-        transition: transform 0.2s ease-in;
-    }
-    p {
-        width: initial;
-        font-size: 1.6rem;
-        margin: initial;
-        @media (max-width: 950px) {
-            font-size: 1.2rem;
-        }
-    }
-    i:hover, i:active {
-        transform: scale(1.2);
-    }
-}
-
 .projects-grid {
     width: 80%;
     margin: auto;
@@ -210,34 +169,31 @@ p {
     @media (max-width: 1100px) {
         grid-template-columns: 1fr;  
     }
+    @media (max-width: 700px) {
+        grid-auto-rows: 200px; 
+    }
 }
 .blog {
-    background: #fff url("../images/blog.PNG");
+    background: #fff url("/images/blog.PNG");
 }
 
 .book-shop {
-    background: #fff url("../images/book_shop.PNG");
+    background: #fff url("/images/book_shop.PNG");
 }
 
 .js-quiz {
-    background: #fff url("../images/javascript_quiz.PNG");
+    background: #fff url("/images/javascript_quiz.PNG");
 }
 
 .to-do-list {
-    background: #fff url("../images/to_do_list.PNG");
+    background: #fff url("/images/to_do_list.PNG");
 }
 
 .weather_app {
-    background:  #fff url("../images/weather_app.PNG");
+    background:  #fff url("/images/weather_app.PNG");
 }
 
-
-
-.blog,
-.book-shop,
-.js-quiz,
-.to-do-list,
-.weather_app {
+.project {
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -247,6 +203,19 @@ p {
     background-position: center;
     border-bottom: 2px solid #ccc;
     transition: transform 0.4s ease-in;
+}
+
+.project:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    .project-description {
+        height: 50%;
+    }
+    @media (max-width: 700px) {
+        .project-description {
+            height: 70%;
+        }
+    }
 }
 
 .active {
@@ -263,29 +232,12 @@ p {
 }
 
 
-.blog:hover, 
-.book-shop:hover,
-.js-quiz:hover,
-.to-do-list:hover, 
-.weather_app:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    .project-description {
-        height: 50%;
-    }
-    @media (max-width: 700px) {
-        .project-description {
-            height: 90%;
-        }
-    }
-}
-
 .project-description {
     width: 100%;
     height: 70px;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.7);
-    transition: height 0.4s 0.2s ease-in;
+    transition: height 0.3s 0.2s ease-in;
     h2 {
         text-align: center;
         letter-spacing: 1px;
@@ -318,22 +270,19 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    i {
-        cursor: pointer;
+    .contact-icon {
         margin: 0 15px;
-        font-size: 2rem;
-        color: #fff;
     }
 }
 
-.linkedin:hover {
-   color: $linkedin-clr
+.linkedin:hover svg {
+   stroke: $linkedin-clr
 }
 
-.github:hover {
-    color: $github-clr;
+.github:hover svg{
+    stroke: $github-clr;
 }
 
-.email:hover {
-    color: $redish;
+.email:hover svg{
+    stroke: $redish;
 }
