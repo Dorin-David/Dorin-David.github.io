@@ -80,7 +80,7 @@ body {
 }
 
 .intro-picture {
-  background: url("/images/Dorin_David.jpg");
+  background: url("../images/Dorin_David.jpg");
   width: 350px;
   height: 350px;
   background-size: cover;
@@ -183,23 +183,23 @@ p span {
 }
 
 .blog {
-  background: #fff url("/images/blog.PNG");
+  background: #fff url("../images/blog.PNG");
 }
 
 .book-shop {
-  background: #fff url("/images/book_shop.PNG");
+  background: #fff url("../images/book_shop.PNG");
 }
 
 .js-quiz {
-  background: #fff url("/images/javascript_quiz.PNG");
+  background: #fff url("../images/javascript_quiz.PNG");
 }
 
 .to-do-list {
-  background: #fff url("/images/to_do_list.PNG");
+  background: #fff url("../images/to_do_list.PNG");
 }
 
 .weather_app {
-  background: #fff url("/images/weather_app.PNG");
+  background: #fff url("../images/weather_app.PNG");
 }
 
 .project {
