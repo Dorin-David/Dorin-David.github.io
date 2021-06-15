@@ -1,3 +1,3 @@
-My current portfolio. Work in progress. 
+My current portfolio. 
 
-Live version deployed on heroku: <https://dorin-david-portfolio.herokuapp.com>
+Live: <https://dorindavid.dev>
