@@ -205,7 +205,7 @@ p span {
 .project {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -227,6 +227,12 @@ p span {
   }
 }
 
+@media (max-width: 500px) {
+  .project:hover .project-description {
+    height: 90%;
+  }
+}
+
 .active {
   cursor: pointer;
   transform: scale(1.1);
@@ -237,6 +243,12 @@ p span {
 @media (max-width: 700px) {
   .active .project-description {
     height: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .active .project-description {
+    height: 90%;
   }
 }
 
