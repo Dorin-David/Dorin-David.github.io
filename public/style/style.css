@@ -12,6 +12,7 @@ body {
 
 body {
   margin: 0;
+  padding: 1rem;
   font-family: "Sarala", sans-serif;
   position: relative;
 }
@@ -34,6 +35,14 @@ body {
   font-size: 1.2rem;
   margin: 0 10px;
   color: inherit;
+}
+@media (max-width: 500px) {
+  .main-nav a {
+    font-size: 1.1rem;
+  }
+  .main-nav a::before {
+    font-size: 1.1rem;
+  }
 }
 .main-nav a:hover,
 .main-nav a:active {
@@ -63,6 +72,11 @@ body {
 @media (max-width: 750px) {
   .hero-header {
     font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .hero-header {
+    font-size: 1.7rem;
   }
 }
 
@@ -95,6 +109,12 @@ body {
     height: 300px;
   }
 }
+@media (max-width: 500px) {
+  .intro-picture {
+    width: 250px;
+    height: 250px;
+  }
+}
 
 .intro-description {
   margin-right: 50px;
@@ -108,6 +128,11 @@ body {
   font-size: 1.3rem;
   font-weight: 400;
   color: #de302a;
+}
+@media (max-width: 400px) {
+  .intro-description span {
+    display: block;
+  }
 }
 .intro-description p {
   font-size: 1.5rem;
@@ -128,8 +153,18 @@ body {
   .intro-description hr {
     margin: 0 auto;
   }
+}
+@media (max-width: 750px) {
   .intro-description h1 {
     font-size: 1.6rem;
+  }
+}
+@media (max-width: 500px) {
+  .intro-description hr {
+    width: 200px;
+  }
+  .intro-description h1 {
+    font-size: 1.4rem;
   }
 }
 
@@ -181,6 +216,11 @@ p span {
     grid-auto-rows: 200px;
   }
 }
+@media (max-width: 500px) {
+  .projects-grid {
+    width: 100%;
+  }
+}
 
 .blog {
   background: #fff url("../images/blog.PNG");
@@ -205,7 +245,7 @@ p span {
 .project {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: end;
   align-items: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -223,11 +263,10 @@ p span {
 }
 @media (max-width: 700px) {
   .project:hover .project-description {
-    height: 70%;
+    height: 80%;
   }
 }
-
-@media (max-width: 500px) {
+@media (max-width: 450px) {
   .project:hover .project-description {
     height: 90%;
   }
@@ -242,13 +281,12 @@ p span {
 }
 @media (max-width: 700px) {
   .active .project-description {
-    height: 70%;
+    height: 80%;
   }
 }
-
-@media (max-width: 500px) {
+@media (max-width: 350px) {
   .active .project-description {
-    height: 90%;
+    height: 100%;
   }
 }
 

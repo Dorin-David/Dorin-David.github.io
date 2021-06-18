@@ -16,6 +16,7 @@ body {
 }
 body {
     margin: 0;
+    padding: 1rem;
     font-family: "Sarala", sans-serif;
     position: relative;
 }
@@ -37,6 +38,12 @@ body {
         font-size: 1.2rem;
         margin: 0 10px;
         color: inherit;
+        @media (max-width: 500px){
+            font-size: 1.1rem;
+            &::before {
+                font-size: 1.1rem;
+            }
+        }
     }
     a:hover, 
     a:active {
@@ -66,6 +73,9 @@ body {
     @media (max-width:750px){
         font-size: 2rem;
     }
+    @media (max-width:500px){
+        font-size: 1.7rem;
+    }
 }
 
 .intro-card {
@@ -80,7 +90,7 @@ body {
 }
 
 .intro-picture {
-    background: url("/images/Dorin_David.jpg");
+    background: url("../images/Dorin_David.jpg");
     width: 350px;
     height: 350px;
     background-size: cover;
@@ -91,6 +101,10 @@ body {
         margin-top: 1rem;
         width: 300px;
         height: 300px;
+    }
+    @media (max-width: 500px){
+        width: 250px;
+        height: 250px;
     }
 
 }
@@ -106,6 +120,9 @@ body {
         font-size: 1.3rem;
         font-weight: 400;
         color: #de302a;
+        @media (max-width: 400px){
+            display: block;
+        }
     }
     p {
         font-size: 1.5rem;
@@ -115,7 +132,9 @@ body {
         margin: 0;
         width: 390px;
         color: $redish;
+
     }
+
     @media (max-width: 950px){
         margin: initial;
         * {
@@ -124,9 +143,20 @@ body {
         hr {
             margin: 0 auto;
         }
+    }
 
+    @media (max-width:750px){
         h1 {
             font-size: 1.6rem;
+        }
+    }
+
+    @media (max-width: 500px){
+        hr {
+            width: 200px;
+        }
+        h1 {
+            font-size: 1.4rem;
         }
     }
 }
@@ -172,25 +202,29 @@ p {
     @media (max-width: 700px) {
         grid-auto-rows: 200px; 
     }
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 }
 .blog {
-    background: #fff url("/images/blog.PNG");
+    background: #fff url("../images/blog.PNG");
 }
 
 .book-shop {
-    background: #fff url("/images/book_shop.PNG");
+    background: #fff url("../images/book_shop.PNG");
 }
 
 .js-quiz {
-    background: #fff url("/images/javascript_quiz.PNG");
+    background: #fff url("../images/javascript_quiz.PNG");
 }
 
 .to-do-list {
-    background: #fff url("/images/to_do_list.PNG");
+    background: #fff url("../images/to_do_list.PNG");
 }
 
 .weather_app {
-    background:  #fff url("/images/weather_app.PNG");
+    background:  #fff url("../images/weather_app.PNG");
 }
 
 .project {
@@ -213,7 +247,12 @@ p {
     }
     @media (max-width: 700px) {
         .project-description {
-            height: 70%;
+            height: 80%;
+        }
+    }
+    @media (max-width: 450px) {
+        .project-description {
+            height: 90%;
         }
     }
 }
@@ -226,7 +265,13 @@ p {
     }
     @media (max-width: 700px) {
         .project-description {
-            height: 70%;
+            height: 80%;
+        }
+    }
+
+    @media (max-width: 350px) {
+        .project-description {
+            height: 100%;
         }
     }
 }
