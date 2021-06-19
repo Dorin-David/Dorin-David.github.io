@@ -185,6 +185,15 @@ p {
     span {
         color: $redish;
     }
+    @media (max-width: 700px) {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    @media (max-width: 500px) {
+        width: 100%;
+        font-size: 1rem;
+    }
+
 }
 
 .projects-grid {
@@ -230,7 +239,7 @@ p {
 .project {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     background-size: contain;
     background-repeat: no-repeat;

@@ -195,6 +195,18 @@ p {
 p span {
   color: #de2f29;
 }
+@media (max-width: 700px) {
+  p {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 500px) {
+  p {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
 
 .projects-grid {
   width: 80%;
@@ -245,7 +257,7 @@ p span {
 .project {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   background-size: contain;
   background-repeat: no-repeat;
