@@ -12,7 +12,6 @@ body {
 
 body {
   margin: 0;
-  padding: 1rem;
   font-family: "Sarala", sans-serif;
   position: relative;
 }
@@ -199,6 +198,7 @@ p span {
   p {
     width: 100%;
     font-size: 1.1rem;
+    padding: 0 1rem;
   }
 }
 @media (max-width: 500px) {
