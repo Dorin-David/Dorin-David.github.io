@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gulp-clean-css": "^4.3.0",
     "gulp-imagemin": "^7.1.0"
   },
   "dependencies": {
