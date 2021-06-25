@@ -314,15 +314,6 @@ p span {
   letter-spacing: 1px;
   color: #de2f29;
 }
-.project-description a {
-  display: inline-block;
-  text-decoration: none;
-  color: #de2f29;
-  transition: text-decoration 0.2s ease-in;
-}
-.project-description a:hover {
-  text-decoration: underline solid #de2f29;
-}
 @media (max-width: 750px) {
   .project-description h2 {
     font-size: 1.4rem;
@@ -330,6 +321,18 @@ p span {
   .project-description p {
     font-size: 1rem;
   }
+}
+
+.project-description a,
+.open-source a {
+  display: inline-block;
+  text-decoration: none;
+  color: #de2f29;
+  transition: text-decoration 0.2s ease-in;
+}
+.project-description a:hover,
+.open-source a:hover {
+  text-decoration: underline solid #de2f29;
 }
 
 footer {

@@ -285,7 +285,6 @@ p {
     }
 }
 
-
 .project-description {
     width: 100%;
     height: 70px;
@@ -297,6 +296,18 @@ p {
         letter-spacing: 1px;
         color: $redish;
     }
+    @media (max-width: 750px) {
+        h2 {
+            font-size: 1.4rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+.project-description,
+.open-source {
     a {
         display: inline-block;
         text-decoration: none;
@@ -305,14 +316,6 @@ p {
     }
     a:hover {
         text-decoration: underline solid $redish;
-    }
-    @media (max-width: 750px) {
-        h2 {
-            font-size: 1.4rem;
-        }
-        p {
-            font-size: 1rem;
-        }
     }
 }
 
