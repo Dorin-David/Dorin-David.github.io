@@ -335,6 +335,17 @@ p span {
   text-decoration: underline solid #de2f29;
 }
 
+.open-source a::after {
+  content: "";
+  background: transparent url("../icons/link.svg") 0 0 no-repeat;
+  background-size: auto;
+  background-size: 16px;
+  display: inline-block;
+  height: 16px;
+  margin-left: 3px;
+  width: 16px;
+}
+
 footer {
   width: 100%;
   margin-top: 40px;
