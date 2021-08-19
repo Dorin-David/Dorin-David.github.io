@@ -85,7 +85,7 @@ body {
     img {
         display: block;
         margin: auto;
-        width: 80%;
+        width: 70%;
         border-radius: 4px;
     }
 }
@@ -129,9 +129,20 @@ body {
 }
 }
 
+@media screen and (min-width: 1100px){
+    .modal-main-image img{
+       width: 800px;
+    }
+}
+
 @media screen and (max-width: 1100px){
     .works-wrapper {
       width: 90%;
+    }
+
+    .modal-main-image {
+        margin-top: 2rem;
+        width: 90%;
     }
   }
   
@@ -145,10 +156,12 @@ body {
     .works-wrapper {
        grid-template-columns: 1fr;
     }
-    
     .work-main {
       width: 70%;
       height: auto;
+    }
+    .modal-main-image img {
+        width: 90%;
     }
   }
 
@@ -159,9 +172,21 @@ body {
     }
   }
 
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 650px){
     .work-main {
       width: 90%;
       height: auto;
     }
+
+    .modal-main-image {
+        height: 100%;
+        width: 95%;
+        display: flex;
+    }
+
+    .modal-gallery {
+        display: none;
+    }
+
+    
   }
