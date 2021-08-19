@@ -19,11 +19,12 @@ body {
 
 .work-main {
   cursor: pointer;
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 200px;
   position: relative;
-  border: 2px solid #ccc;
+  border: 1px solid #ccc;
   border-radius: 4px;
+  transition: transform 0.5s ease;
 }
 .work-main img {
   display: block;
@@ -33,20 +34,8 @@ body {
   border-radius: 4px;
 }
 
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 50;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  border-radius: 4px;
-}
-
-.work-main:hover .overlay {
-  background: rgba(2, 2, 2, 0.3);
+.work-main:hover {
+  transform: scale(1.1);
 }
 
 .modal-wrapper {
@@ -73,7 +62,7 @@ body {
 }
 
 .close-modal-btn:hover svg {
-  stroke: red;
+  stroke: #de2f29;
 }
 
 .main-block {
@@ -90,13 +79,14 @@ body {
   width: 100%;
   height: 70%;
   margin: 0;
-  padding-top: 2.7rem;
+  padding-top: 1rem;
+  border-radius: 4px;
 }
 .modal-main-image img {
   display: block;
   margin: auto;
-  width: 450px;
-  height: 450px;
+  width: 80%;
+  border-radius: 4px;
 }
 
 [class^=arrow] {
@@ -123,15 +113,18 @@ body {
 
 .modal-gallery {
   width: 100%;
+  margin-top: 1.5rem;
   padding: 1rem 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  overflow: auto;
 }
 .modal-gallery img {
   cursor: pointer;
-  width: 120px;
+  width: 240px;
   height: 120px;
-  margin: 0 1rem;
+  margin: 0.5rem 1rem;
   border-radius: 4px;
 }
 

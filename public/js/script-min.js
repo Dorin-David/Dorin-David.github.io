@@ -1,0 +1,1 @@
+let projects=document.querySelectorAll(".project");function showDescription(){this.classList.toggle("active")}for(let e of projects)e.addEventListener("mousedown",showDescription);document.addEventListener("click",function(e){if(!e.target.closest(".project"))for(let e of projects)e.classList.remove("active")});
