@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,20 +12,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sarala&display=swap" rel="stylesheet"> 
     <!-- style -->
-    <link rel="stylesheet" href="./public/style/style.css">
+    <link rel="stylesheet" href="./public/style/main.css">
+    <link rel="stylesheet" href="./public/style/gallery.css">
     <!-- icon -->
     <link rel="icon" href="./public/images/logo_final.png" />
 </head>
 
 <body>
+    <!-- navigation bar -->
     <nav class='main-nav'>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contacts">Contacts</a>
     </nav>
-
+        <!-- end navigation bar -->
     <main>
         <section class='intro'>
+            <!-- intro -->
             <h1 class='hero-header'>Hi there! Can I tell your story?</h1>
             <div class="intro-card">
                 <div class="intro-description">
@@ -36,7 +38,8 @@
                 <div class="intro-picture"></div>
 
             </div>
-
+     <!-- end intro -->
+     <!-- about -->
             <div id='about'>
                 <h1 class="section-header" >About</h1>
             <p> 
@@ -47,7 +50,9 @@
                 Can we <span>help</span> each other? How can we <span>grow</span> together? I'm looking forward to discover what you have to teach me.
             </p>
             </div>
+            <!-- end about -->
         </section>
+          <!-- projects -->
         <section class='projects-section' id='projects'>
             <h1 class="section-header">My projects</h1>
             <div class="projects-grid">
@@ -102,6 +107,70 @@
                 </div>
             </div>
         </section>
+        <!-- end projects -->
+        <!-- gallery -->
+        <section class="gallery">
+        <div class="works-wrapper">
+
+            <div class="work-main" data-name="bookshop" data-img-path="./public/images/bookshop/">
+                <img src="./public/images/bookshop/main.PNG" alt="bookshop_project">
+                <div class="overlay"></div>
+            </div>
+    
+            <div class="work-main" data-name="dintorni" data-img-path="./public/images/dintorni/">
+                <img src="./public/images/dintorni/main.PNG" alt="blog_project">
+                <div class="overlay"></div>
+            </div>
+    
+            <div class="work-main" data-name="js_quiz" data-img-path="./public/images/js_quiz/">
+                <img src="./public/images/js_quiz/main.jpg" alt="javascript-quiz_project">
+                <div class="overlay"></div>
+            </div>
+    
+            <div class="work-main" data-name="mondo_pane" data-img-path="./public/images/mondo_pane/">
+                <img src="./public/images/mondo_pane/main.jpg" alt="mondopane_project">
+                <div class="overlay"></div>
+            </div>
+    
+            <div class="work-main" data-name="simply_eat" data-img-path="./public/images/simply_eat/">
+                <img src="./public/images/simply_eat/main.jpg" alt="simply-eat_project">
+                <div class="overlay"></div>
+            </div>
+    
+            <div class="work-main" data-name="string_of_world" data-img-path="./public/images/string_of_world/">
+                <img src="./public/images/string_of_world/main.jpg" alt="string-of-world_project">
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <!-- end gallery -->
+               <!-- modal-->
+            <div class="modal-wrapper hidden">
+                <div class="main-block">
+                    <div class="close-modal-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                       </div>
+                    <!-- main image -->
+                <div class="modal-main-image">
+                    <img src="" alt="">
+                </div>
+                <!-- end main image -->
+                <!-- project gallery -->
+                <div class="modal-gallery">
+                </div>
+                <!-- end project gallery -->
+                 <!-- arrows -->
+                 <div class="arrow-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"/></svg>
+                </div>
+                <div class="arrow-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"/></svg>
+                </div>
+                <!-- end arrows -->
+                </div>
+            </div>
+        </section>
+        <!-- end modal -->
+         <!-- open source -->
         <section class="open-source">
             <h1 class="section-header">Open Source</h1>
             <p><span>Open source</span> is at the very core of a vital web. Thanks to open source great code, written and maintained by many developers, is made available to the entire world.
@@ -110,7 +179,9 @@
                 Widely known as one of the best resources for studying JavaScript, it has helped me immensely and it keeps doing so. It has been a pleasure to contribute to the <a href="https://it.javascript.info/" target="_blank">italian translation</a>.
             </p>
         </section>
+        <!-- end open source -->
     </main>
+     <!-- contacts -->
     <footer id='contacts'>
         <!-- thanks to https://feathericons.com/, awesome job! -->
         <div class="contact-icon linkedin">
@@ -129,8 +200,10 @@
         </a>
       </div>
     </footer>
+        <!-- end contacts -->
     <!--(make description show for mobile devices too)-->
-    <script src="js/script.js"></script>
+    <script src="./public/js/script.js"></script>
+    <script src="./public/js/modal.js"></script>
 </body>
 
 </html>
