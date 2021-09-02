@@ -246,6 +246,10 @@ p span {
   background: #fff url("../images/javascript_quiz.PNG");
 }
 
+.codewars-database {
+  background: #fff url("../images/codewars_database.png");
+}
+
 .to-do-list {
   background: #fff url("../images/to_do_list.PNG");
 }
