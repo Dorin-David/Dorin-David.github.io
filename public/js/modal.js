@@ -43,7 +43,6 @@ const projectsImages = document.querySelectorAll('.work-main');
             const img = document.createElement('img');
             img.src = imagePath + image;
             img.addEventListener('click', () => {
-                console.log(ind)
                 index = ind;
                 modalMainImage.src = imagePath + image;
             })
