@@ -4,7 +4,7 @@ const cleanCSS = require('gulp-clean-css');
 const minfify = require('gulp-minify');
 
 function minifyImg() {
-    return src('./src/assets/images/*').pipe(minImg()).pipe(dest('./public/images'))
+    return src('./src/assets/images/*/*').pipe(minImg()).pipe(dest('./public/images'))
 }
 
 function minifyCSS(){

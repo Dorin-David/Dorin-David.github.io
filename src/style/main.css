@@ -234,6 +234,10 @@ p span {
   }
 }
 
+.chess-database {
+  background: #fff url("../images/chess_database.PNG");
+}
+
 .blog {
   background: #fff url("../images/blog.PNG");
 }

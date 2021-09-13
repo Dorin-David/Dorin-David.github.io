@@ -4,6 +4,7 @@ const images = {
     js_quiz: ['main.JPG', 'sample_1.JPG', 'sample_2.JPG', 'sample_3.JPG', 'styles.JPG'],
     codewars_database: ['user_card.JPG', 'katas.JPG', 'kata_info.JPG', 'user_card_2.JPG', 'kata_info2.JPG'],
     mondo_pane: ['main.JPG', 'pane.JPG', 'farine_main.JPG', 'farine.JPG', 'farine_small.JPG'],
+    chess_database: ["main3.PNG","main.PNG","main2.PNG", "games.PNG"]
 }
 
 const modalWrapper = document.querySelector('.modal-wrapper');
