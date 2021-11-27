@@ -1,7 +1,7 @@
 const images = {
     bookshop: ['main.PNG', 'bookshop_big.JPG', 'book_description.JPG', 'cart.JPG', 'order_form.JPG', 'orders_history.JPG'],
     dintorni: ['main.JPG','raccolte.JPG', 'authors.JPG','categories.JPG', 'article.JPG'],
-    js_quiz: ['main.JPG', 'sample_1.JPG', 'sample_2.JPG', 'sample_3.JPG', 'styles.JPG'],
+    js_quiz: ['main.JPG', 'sample_1.JPG', 'sample_2.JPG', 'review.JPG', 'styles.JPG', 'sample_3.JPG', ],
     codewars_database: ['user_card.JPG', 'katas.JPG', 'kata_info.JPG', 'user_card_2.JPG', 'kata_info2.JPG'],
     mondo_pane: ['main.JPG', 'pane.JPG', 'farine_main.JPG', 'farine.JPG', 'farine_small.JPG'],
     chess_database: ["main3.PNG", "loading.PNG", 'filter1.PNG', 'filter2.PNG', 'filter3.PNG']
