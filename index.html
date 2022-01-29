@@ -151,10 +151,50 @@
             <div class="work-main" data-name="dintorni" data-img-path="./public/images/dintorni/">
                 <img src="public/images/dintorni/main.JPG" alt="blog_project">
             </div>
+<!-- 
+            merge logic together  -->
 
+            <!-- <div class="book-shop project" role="img" aria-label="book shop project">
+                <div class="project-description">
+                    <h2>Book shop</h2>
+                    <p>A mock bookshop built with React.
+                        <a href="https://github.com/Dorin-David/React-book-shop" target="_blank">Source code on Github</a>
+                    </p>
+                </div>
+            </div> -->
+         <style>
+             .x {
+                 width: 70px;
+                 height: 70px;
+                 border: 2px solid red;
+             }
+
+             .work-main,
+             .project-info {
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 flex-direction: column;
+             }
+
+             .work-main img {
+                 position: absolute;
+             }
+
+             .project-info {
+                 z-index: 3;
+             }
+         </style>
             <div class="work-main" data-name="bookshop" data-img-path="./public/images/bookshop/">
                 <img src="./public/images/bookshop/main.PNG" alt="bookshop_project">
+                <div class='project-info'>
+                <h1>Bookshop</h1>
+                <p>A mock bookshop built with React.</p>
+                <div class='x' data-name="bookshop" data-img-path="./public/images/bookshop/"></div>
+                </div>
             </div>
+
+            <!-- end test  -->
     
             <div class="work-main" data-name="js_quiz" data-img-path="./public/images/js_quiz/">
                 <img src="./public/images/js_quiz/main.JPG" alt="javascript-quiz_project">
@@ -225,7 +265,7 @@
         <!-- end contacts -->
     <!--(make description show for mobile devices too)-->
     <script src="./public/js/script-min.js"></script>
-    <script src="./public/js/modal-min.js"></script>
+    <script src="./src/js/modal.js"></script>
 </body>
 
 </html>
