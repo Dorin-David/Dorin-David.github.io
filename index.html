@@ -137,55 +137,63 @@
         </section>
         <!-- end projects -->
         <!-- gallery -->
+        <style>
+            .x {
+                width: 70px;
+                height: 70px;
+                border: 2px solid red;
+            }
+
+            .work-main,
+            .project-info {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .work-main img {
+                position: absolute;
+            }
+
+            .project-info {
+                z-index: 3;
+            }
+        </style>
         <section class="gallery" id="gallery">
             <h1 class="section-header">Gallery</h1>
             <p>You can check the design of some of my projects below. To do so, just click on a project's card. </p>
         <div class="works-wrapper">
-            <div class="work-main" data-name="string_of_world" data-img-path="./public/images/string_of_world/">
+
+            <div class="work-main" >
                 <img src="public/images/string_of_world/main.PNG" alt="string_of_world_project">
-            </div>
-            <div class="work-main" data-name="chess_database" data-img-path="./public/images/chess-database/">
-                <img src="public/images/chess-database/main3.PNG" alt="chess_database_project">
-            </div>
-
-            <div class="work-main" data-name="dintorni" data-img-path="./public/images/dintorni/">
-                <img src="public/images/dintorni/main.JPG" alt="blog_project">
-            </div>
-<!-- 
-            merge logic together  -->
-
-            <!-- <div class="book-shop project" role="img" aria-label="book shop project">
-                <div class="project-description">
-                    <h2>Book shop</h2>
-                    <p>A mock bookshop built with React.
-                        <a href="https://github.com/Dorin-David/React-book-shop" target="_blank">Source code on Github</a>
-                    </p>
+                <div class='project-info'>
+                <h1>String Of World</h1>
+                <p>I've had the pleasure to develop the personal website of an amazing italian string artist.</p>
+                <div class='x' data-name="string_of_world" data-img-path="./public/images/string_of_world/"></div>
                 </div>
-            </div> -->
-         <style>
-             .x {
-                 width: 70px;
-                 height: 70px;
-                 border: 2px solid red;
-             }
+            </div>
 
-             .work-main,
-             .project-info {
-                 display: flex;
-                 justify-content: center;
-                 align-items: center;
-                 flex-direction: column;
-             }
+            <div class="work-main" >
+                <img src="public/images/chess-database/main3.PNG" alt="chess_database_project">
+                <div class='project-info'>
+                <h1>Chess.com database</h1>
+                <p>An app for <a href="https://www.chess.com/">chess.com</a>'s players' stats and games.</p>
+                <div class='x' data-name="chess_database" data-img-path="./public/images/chess-database/"></div>
+                </div>
+            </div>
 
-             .work-main img {
-                 position: absolute;
-             }
+            <div class="work-main" >
+                <img src="public/images/dintorni/main.JPG" alt="blog_project">
+                <div class='project-info'>
+                <h1>Dintorni</h1>
+                <p>A blog about cinema, philosophy and literature built with Next.js.
+                    <a href="https://dintorni.herokuapp.com/" target="_blank">Live</a></p>
+                <div class='x' data-name="dintorni" data-img-path="./public/images/dintorni/"></div>
+                </div>
+            </div>
 
-             .project-info {
-                 z-index: 3;
-             }
-         </style>
-            <div class="work-main" data-name="bookshop" data-img-path="./public/images/bookshop/">
+            <div class="work-main" >
                 <img src="./public/images/bookshop/main.PNG" alt="bookshop_project">
                 <div class='project-info'>
                 <h1>Bookshop</h1>
@@ -195,13 +203,24 @@
             </div>
 
             <!-- end test  -->
-    
-            <div class="work-main" data-name="js_quiz" data-img-path="./public/images/js_quiz/">
+
+            <div class="work-main" >
                 <img src="./public/images/js_quiz/main.JPG" alt="javascript-quiz_project">
+                <div class='project-info'>
+                <h1>JavaScript quiz</h1>
+                <p>A JavaScript quiz build in vanilla JS. User can review incorrect answers.
+                    <a href="https://github.com/Dorin-David/JavaScript-Quiz" target="_blank">Source code on Github</a></p>
+                <div class='x' data-name="js_quiz" data-img-path="./public/images/js_quiz/"></div>
+                </div>
             </div>
 
-            <div class="work-main" data-name="codewars_database" data-img-path="./public/images/codewars_database/">
+            <div class="work-main" >
                 <img src="./public/images/codewars_database/user_card.JPG" alt="codewarsdatabse_project">
+                <div class='project-info'>
+                <h1>Codewars database</h1>
+                <p>This app visualizes the stats and the coding problems solved by <a href="https://www.codewars.com/">Codewars</a>' users.</p>
+                <div class='x' data-name="codewars_database" data-img-path="./public/images/codewars_database/"></div>
+                </div>
             </div>
         </div>
         <!-- end gallery -->
