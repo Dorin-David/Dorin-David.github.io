@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 *,
 *::before,
 *::after {
@@ -12,7 +14,7 @@ body {
 
 body {
   margin: 0;
-  font-family: "Sarala", sans-serif;
+  font-family: "Rubik", sans-serif;
   position: relative;
 }
 
@@ -207,6 +209,22 @@ p span {
     font-size: 1rem;
   }
 }
+
+
+.project-info a,
+.open-source a {
+  display: inline-block;
+  text-decoration: none;
+  /* color: #de2f29; */
+  /*below style needs to be changed*/
+  color: white;
+  text-decoration: underline solid 2px #de2f29;
+  /* transition: text-decoration 0.2s ease-in; */
+}
+/* .project-info a:hover,
+.open-source a:hover {
+  text-decoration: underline solid #de2f29;
+} */
 
 .open-source a::after {
   content: "";
