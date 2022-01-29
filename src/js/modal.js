@@ -13,7 +13,7 @@ const modalMainImage = document.querySelector('.modal-main-image img');
 const modalGallery = document.querySelector('.modal-gallery');
 const mainImageArrowSx = document.querySelector('.arrow-left');
 const mainImageArrowDx = document.querySelector('.arrow-right');
-const projectsImages = document.querySelectorAll('.x');
+const projectsImages = document.querySelectorAll('.gallery-trigger');
 
 [...projectsImages].forEach(project => {
     const name = project.dataset.name;

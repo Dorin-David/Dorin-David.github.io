@@ -4,7 +4,6 @@ const images = {
     dintorni: ['main.JPG','raccolte.JPG', 'authors.JPG','categories.JPG', 'article.JPG'],
     js_quiz: ['main.JPG', 'sample_1.JPG', 'sample_2.JPG', 'review.JPG', 'styles.JPG', 'sample_3.JPG', ],
     codewars_database: ['user_card.JPG', 'katas.JPG', 'kata_info.JPG', 'user_card_2.JPG', 'kata_info2.JPG'],
-    mondo_pane: ['main.JPG', 'pane.JPG', 'farine_main.JPG', 'farine.JPG', 'farine_small.JPG'],
     chess_database: ["main3.PNG", "loading.PNG", 'filter1.PNG', 'filter2.PNG', 'filter3.PNG']
 }
 
@@ -14,7 +13,7 @@ const modalMainImage = document.querySelector('.modal-main-image img');
 const modalGallery = document.querySelector('.modal-gallery');
 const mainImageArrowSx = document.querySelector('.arrow-left');
 const mainImageArrowDx = document.querySelector('.arrow-right');
-const projectsImages = document.querySelectorAll('.work-main');
+const projectsImages = document.querySelectorAll('.gallery-trigger');
 
 [...projectsImages].forEach(project => {
     const name = project.dataset.name;

@@ -53,97 +53,9 @@
             </div>
             <!-- end about -->
         </section>
-          <!-- projects -->
-        <section class='projects-section' id='projects'>
-            <h1 class="section-header">My projects</h1>
-            <div class="projects-grid">
-                <div class="string-of-world project" role="img" aria-label="a website for a string art artist">
-                    <div class="project-description">
-                        <h2>String Of World</h2>
-                        <p>I've had the pleasure to develop the personal website of an amazing italian string artist. 
-                            <a href="https://string-of-world.herokuapp.com/" target="_blank">Live</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="chess-database project" role="img" aria-label="chess.com database project">
-                    <div class="project-description">
-                        <h2>Chess.com database</h2>
-                        <p>An app for <a href="https://www.chess.com/">chess.com</a>'s players' stats and games.
-                            <a href="https://github.com/Dorin-David/chess.com-database" target="_blank">Source code on Github</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="blog project" role="img" aria-label="blog project">
-                    <div class="project-description">
-                        <h2>Blog</h2>
-                        <p>A blog about cinema, philosophy and literature built with Next.js.
-                            <a href="https://dintorni.herokuapp.com/" target="_blank">Live</a> /
-                            <a href="https://github.com/Dorin-David/Blog" target="_blank">Source code on Github</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="book-shop project" role="img" aria-label="book shop project">
-                    <div class="project-description">
-                        <h2>Book shop</h2>
-                        <p>A mock bookshop built with React.
-                            <a href="https://github.com/Dorin-David/React-book-shop" target="_blank">Source code on Github</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="js-quiz project" role="img" aria-label="javaScript quiz project">
-                    <div class="project-description">
-                        <h2>JavaScript quiz</h2>
-                        <p>A JavaScript quiz build in vanilla JS. User can review incorrect answers.
-                            <a href="https://github.com/Dorin-David/JavaScript-Quiz" target="_blank">Source code on Github</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="codewars-database project" role="img" aria-label="codewars database project">
-                    <div class="project-description">
-                        <h2>Codewars database</h2>
-                        <p>This app visualizes the stats and the coding problems solved by <a href="https://www.codewars.com/">Codewars</a>' users.
-                            <a href="https://github.com/Dorin-David/codewars-database" target="_blank">Source code on Github</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="weather_app project" role="img" aria-label="weather app project" >
-                    <div class="project-description">
-                        <h2>Weather App</h2>
-                        <p>A simple weather app built with Node.js and handlebars views.
-                            <a href="https://dorio-weather-app.herokuapp.com/" target="_blank">Live</a> /
-                            <a href="https://github.com/Dorin-David/node-weather-app" target="_blank">Source code on Github</a>
-                           
-                        </p>
-
-                    </div>
-                </div>
-
-                <div class="to-do-list project" role="img" aria-label="to do list project" >
-                    <div class="project-description">
-                        <h2>To do App</h2>
-                        <p>A to do (or not to do) application built with React.
-                            <a href="https://github.com/Dorin-David/React-to-do-app" target="_blank">Source code on Github</a>
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end projects -->
         <!-- gallery -->
         <style>
-            .x {
-                width: 70px;
-                height: 70px;
-                border: 2px solid red;
-            }
-
+            /* currently below code does not work in css file */
             .work-main,
             .project-info {
                 display: flex;
@@ -157,8 +69,21 @@
             }
 
             .project-info {
+                color: white;
                 z-index: 3;
             }
+
+            .project-info p {
+                color: white;
+            }
+
+           .project-overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background: rgba(34, 33, 33, 0.55);
+           }
         </style>
         <section class="gallery" id="gallery">
             <h1 class="section-header">Gallery</h1>
@@ -167,38 +92,54 @@
 
             <div class="work-main" >
                 <img src="public/images/string_of_world/main.PNG" alt="string_of_world_project">
+                <div class='project-overlay'></div>
                 <div class='project-info'>
                 <h1>String Of World</h1>
                 <p>I've had the pleasure to develop the personal website of an amazing italian string artist.</p>
-                <div class='x' data-name="string_of_world" data-img-path="./public/images/string_of_world/"></div>
+                <div class='gallery-trigger' data-name="string_of_world" data-img-path="./public/images/string_of_world/">
+                    Gallery
+                    <div class='text-decoration'></div>
+                </div>
                 </div>
             </div>
 
             <div class="work-main" >
                 <img src="public/images/chess-database/main3.PNG" alt="chess_database_project">
+                <div class='project-overlay'></div>
                 <div class='project-info'>
                 <h1>Chess.com database</h1>
                 <p>An app for <a href="https://www.chess.com/">chess.com</a>'s players' stats and games.</p>
-                <div class='x' data-name="chess_database" data-img-path="./public/images/chess-database/"></div>
+                <div class='gallery-trigger' data-name="chess_database" data-img-path="./public/images/chess-database/">
+                    Gallery
+                    <div class='text-decoration'></div>
+                </div>
                 </div>
             </div>
 
             <div class="work-main" >
                 <img src="public/images/dintorni/main.JPG" alt="blog_project">
+                <div class='project-overlay'></div>
                 <div class='project-info'>
                 <h1>Dintorni</h1>
                 <p>A blog about cinema, philosophy and literature built with Next.js.
                     <a href="https://dintorni.herokuapp.com/" target="_blank">Live</a></p>
-                <div class='x' data-name="dintorni" data-img-path="./public/images/dintorni/"></div>
+                <div class='gallery-trigger' data-name="dintorni" data-img-path="./public/images/dintorni/">
+                    Gallery
+                    <div class='text-decoration'></div>
+                </div>
                 </div>
             </div>
 
             <div class="work-main" >
                 <img src="./public/images/bookshop/main.PNG" alt="bookshop_project">
+                <div class='project-overlay'></div>
                 <div class='project-info'>
                 <h1>Bookshop</h1>
                 <p>A mock bookshop built with React.</p>
-                <div class='x' data-name="bookshop" data-img-path="./public/images/bookshop/"></div>
+                <div class='gallery-trigger' data-name="bookshop" data-img-path="./public/images/bookshop/">
+                    Gallery
+                    <div class='text-decoration'></div>
+                </div>
                 </div>
             </div>
 
@@ -206,20 +147,28 @@
 
             <div class="work-main" >
                 <img src="./public/images/js_quiz/main.JPG" alt="javascript-quiz_project">
+                <div class='project-overlay'></div>
                 <div class='project-info'>
                 <h1>JavaScript quiz</h1>
                 <p>A JavaScript quiz build in vanilla JS. User can review incorrect answers.
                     <a href="https://github.com/Dorin-David/JavaScript-Quiz" target="_blank">Source code on Github</a></p>
-                <div class='x' data-name="js_quiz" data-img-path="./public/images/js_quiz/"></div>
+                <div class='gallery-trigger' data-name="js_quiz" data-img-path="./public/images/js_quiz/">
+                    Gallery
+                    <div class='text-decoration'></div>
+                </div>
                 </div>
             </div>
 
             <div class="work-main" >
                 <img src="./public/images/codewars_database/user_card.JPG" alt="codewarsdatabse_project">
+                <div class='project-overlay'></div>
                 <div class='project-info'>
                 <h1>Codewars database</h1>
                 <p>This app visualizes the stats and the coding problems solved by <a href="https://www.codewars.com/">Codewars</a>' users.</p>
-                <div class='x' data-name="codewars_database" data-img-path="./public/images/codewars_database/"></div>
+                <div class='gallery-trigger' data-name="codewars_database" data-img-path="./public/images/codewars_database/">
+                    Gallery
+                    <div class='text-decoration'></div>
+                </div>
                 </div>
             </div>
         </div>

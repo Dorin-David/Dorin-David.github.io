@@ -160,6 +160,23 @@ body {
     height: auto;
   }
 
+  .work-main,
+  .project-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.work-main img {
+    position: absolute;
+}
+
+.project-info {
+    z-index: 3;
+}
+  
+
   .modal-main-image img {
     width: 90%;
   }
