@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sarala&display=swap" rel="stylesheet"> 
     <!-- style -->
-    <link rel="stylesheet" href="./public/style/main.css">
-    <link rel="stylesheet" href="./public/style/gallery.css">
+    <link rel="stylesheet" href="./src/style/main.css">
+    <link rel="stylesheet" href="./src/style/gallery.css">
     <!-- icon -->
     <link rel="icon" href="./public/images/logo_final.png" />
 </head>
@@ -30,15 +30,29 @@
     <main>
         <section class='intro'>
             <!-- intro -->
-            <h1 class='hero-header'>Hi there! Can I tell your story?</h1>
-            <div class="intro-card">
+           <div class='headers-wrapper'>
+               <div class='header-wrapper'>
+                   <h1 class='intro-header'>Immagine</h1>
+                   <div class='header-decoration' id="first"></div>
+               </div>
+               <div class='header-wrapper'>
+                   <h1 class='intro-header'>Plan</h1>
+                   <div class='header-decoration' id="second"></div>
+               </div>
+               <div class='header-wrapper'>
+                   <h1 class='intro-header'>Create</h1>
+                   <div class='header-decoration' id="third"></div>
+               </div>
+           </div>
+
+            <!-- <div class="intro-card">
                 <div class="intro-description">
                     <h1>Dorin David - <span>Frontend developer</span></h1>
                     <hr>
                 </div>
                 <div class="intro-picture"></div>
 
-            </div>
+            </div> -->
      <!-- end intro -->
      <!-- about -->
             <div id='about'>
