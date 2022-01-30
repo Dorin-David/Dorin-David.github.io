@@ -31,16 +31,13 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 1px 2px #ccc;
-    /*hide temporarily*/
-    display: none;
+  background: #12111194;
 }
 .main-nav a {
   text-decoration: none;
   font-size: 1.2rem;
   margin: 0 10px;
-  color: inherit;
+  color: white;
 }
 @media (max-width: 500px) {
   .main-nav a {
@@ -52,13 +49,24 @@ body {
 }
 .main-nav a:hover,
 .main-nav a:active {
-  cursor: pointer;
-  color: #de2f29;
+  color: rgb(211, 211, 211);
 }
+
 .main-nav a::before {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 800;
   content: "\\ ";
-  color: #de2f29;
+}
+
+.main-nav a:nth-of-type(1)::before {
+  color: #FF6700;
+}
+.main-nav a:nth-of-type(2)::before {
+ color: #40A02C;
+}
+
+.main-nav a:nth-of-type(3)::before {
+  color: #088A81;
 }
 
 .headers-wrapper {
@@ -95,120 +103,13 @@ body {
   border-color: #088A81;
 }
 
-
-
-
 .intro {
-  margin-top: 2rem;
+  margin-top: 100px;
 }
 
 #about,
 #projects {
   padding-top: 40px;
-}
-
-.hero-header {
-  font-size: 3rem;
-  text-align: center;
-  color: #de2f29;
-}
-@media (max-width: 750px) {
-  .hero-header {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 500px) {
-  .hero-header {
-    font-size: 1.7rem;
-  }
-}
-
-.intro-card {
-  width: 90%;
-  height: 350px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-@media (max-width: 950px) {
-  .intro-card {
-    display: initial;
-  }
-}
-
-.intro-picture {
-  background: url("../images/Dorin_David.jpg");
-  width: 350px;
-  height: 350px;
-  background-size: cover;
-  border-radius: 50%;
-  background-position: left -60px;
-}
-@media (max-width: 950px) {
-  .intro-picture {
-    margin: auto;
-    margin-top: 1rem;
-    width: 300px;
-    height: 300px;
-  }
-}
-@media (max-width: 500px) {
-  .intro-picture {
-    width: 250px;
-    height: 250px;
-  }
-}
-
-.intro-description {
-  margin-right: 50px;
-}
-.intro-description h1 {
-  margin: 0;
-  font-size: 2rem;
-  color: #de2f29;
-}
-.intro-description span {
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: #de302a;
-}
-@media (max-width: 400px) {
-  .intro-description span {
-    display: block;
-  }
-}
-.intro-description p {
-  font-size: 1.5rem;
-  color: #de2f29;
-}
-.intro-description hr {
-  margin: 0;
-  width: 390px;
-  color: #de2f29;
-}
-@media (max-width: 950px) {
-  .intro-description {
-    margin: initial;
-  }
-  .intro-description * {
-    text-align: center;
-  }
-  .intro-description hr {
-    margin: 0 auto;
-  }
-}
-@media (max-width: 750px) {
-  .intro-description h1 {
-    font-size: 1.6rem;
-  }
-}
-@media (max-width: 500px) {
-  .intro-description hr {
-    width: 200px;
-  }
-  .intro-description h1 {
-    font-size: 1.4rem;
-  }
 }
 
 .section-header {
@@ -235,9 +136,7 @@ p {
   color: #635f5f;
   line-height: 1.5;
 }
-p span {
-  color: #de2f29;
-}
+
 @media (max-width: 700px) {
   p {
     width: 100%;
@@ -304,4 +203,3 @@ footer .contact-icon {
   stroke: #de2f29;
 }
 
-/*# sourceMappingURL=main.css.map */
