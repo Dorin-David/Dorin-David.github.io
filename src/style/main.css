@@ -148,23 +148,23 @@ body {
   border-color: #088A81;
  }
 
-p {
+ .section-main-paragraph {
   width: 80%;
   margin: 10px auto;
   font-size: 1.1rem;
-  color: #635f5f;
-  line-height: 1.5;
+  color: #ccc5c5;
+  line-height: 1.4;
 }
 
 @media (max-width: 700px) {
-  p {
+  .section-main-paragraph {
     width: 100%;
     font-size: 1.1rem;
     padding: 0 1rem;
   }
 }
 @media (max-width: 500px) {
-  p {
+  .section-main-paragraph {
     width: 100%;
     font-size: 1rem;
   }
@@ -173,28 +173,27 @@ p {
 
 .project-info a,
 .open-source a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  /* color: #de2f29; */
-  /*below style needs to be changed*/
   color: white;
-  text-decoration: underline solid 2px #de2f29;
-  /* transition: text-decoration 0.2s ease-in; */
 }
-/* .project-info a:hover,
-.open-source a:hover {
-  text-decoration: underline solid #de2f29;
-} */
 
-.open-source a::after {
+:is(.project-info, .open-source) a:hover {
+  text-decoration: underline solid 2px #FF6700;
+}
+
+.open-source a::after,
+.project-info a::after {
   content: "";
   background: transparent url("../icons/link.svg") 0 0 no-repeat;
   background-size: auto;
   background-size: 16px;
   display: inline-block;
   height: 16px;
-  margin-left: 3px;
   width: 16px;
+  margin-left: 1px;
+  
 }
 
 footer {
