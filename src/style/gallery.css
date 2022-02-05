@@ -60,18 +60,20 @@ body {
     text-align: center;
 }
 
-.project-info a {
+:is(.section-main-paragraph, .project-info) a {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
   color: white;
+  font-weight: 600;
 }
 
-.project-info a:hover {
+
+:is(.section-main-paragraph, .project-info) a:hover {
   text-decoration: underline solid 2px #FF6700;
 }
 
-.project-info a::after {
+:is(.section-main-paragraph, .project-info) a::after {
   content: "";
   background: transparent url("../icons/link.svg") 0 0 no-repeat;
   background-size: auto;
@@ -81,6 +83,10 @@ body {
   width: 16px;
   margin-left: 1px;
   
+}
+
+.section-main-paragraph #local-link::after {
+  all: initial
 }
 
 .project-overlay{
