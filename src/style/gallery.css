@@ -30,6 +30,14 @@ body {
   height: 100%;
   margin: auto;
   border-radius: 4px;
+  position: absolute;
+}
+
+.project-info {
+  width: 100%;
+  height: 100%;
+  color: white;
+  z-index: 3;
 }
 
 .work-main,
@@ -38,16 +46,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.work-main img {
-    position: absolute;
-}
-
-.project-info {
-    width: 100%;
-    color: white;
-    z-index: 3;
 }
 
 .project-info h1 {
@@ -59,6 +57,29 @@ body {
     width: 90%;
     color: #ccc5c5;
     text-align: center;
+}
+
+.project-info a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.project-info a:hover {
+  text-decoration: underline solid 2px #FF6700;
+}
+
+.project-info a::after {
+  content: "";
+  background: transparent url("../icons/link.svg") 0 0 no-repeat;
+  background-size: auto;
+  background-size: 16px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-left: 1px;
+  
 }
 
 .project-overlay{

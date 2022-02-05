@@ -185,7 +185,6 @@ body {
 }
 
 
-.project-info a,
 .open-source a {
   display: inline-flex;
   align-items: center;
@@ -193,12 +192,11 @@ body {
   color: white;
 }
 
-:is(.project-info, .open-source) a:hover {
+ .open-source a:hover {
   text-decoration: underline solid 2px #FF6700;
 }
 
-.open-source a::after,
-.project-info a::after {
+.open-source a::after {
   content: "";
   background: transparent url("../icons/link.svg") 0 0 no-repeat;
   background-size: auto;
