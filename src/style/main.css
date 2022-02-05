@@ -33,25 +33,25 @@ body {
 }
 .main-nav a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 0 10px;
   color: white;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .main-nav a {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   .main-nav a::before {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 500px) {
   .main-nav a {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .main-nav a::before {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 .main-nav a:hover,
@@ -88,7 +88,7 @@ body {
 }
 
 .intro-header {
-  font-size: 3rem;
+  font-size: 3.4rem;
   margin: 0;
   color: white;
 }
@@ -128,12 +128,11 @@ body {
   display: flex;
   justify-content: center;
   margin: 2rem 0;
-
 }
 
 .section-header h1 {
   margin: 0;
-  font-size: 40px;
+  font-size: 45px;
   text-align: center;
   color: white;
 }
@@ -175,7 +174,7 @@ body {
  .section-main-paragraph {
   width: 80%;
   margin: 10px auto;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #ccc5c5;
   line-height: 1.4;
 }
@@ -183,7 +182,7 @@ body {
 @media (max-width: 700px) {
   .section-main-paragraph {
     width: 100%;
-    font-size: 1.1rem;
+
     padding: 0 1rem;
   }
 }
