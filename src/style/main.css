@@ -143,7 +143,7 @@ body {
 
  .header-decoration {
   transform: translate(-6.5rem);
-  transition: transform 1s ease-out;
+  transition: transform .6s ease-out;
 }
 
 .header-decoration.active {

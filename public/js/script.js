@@ -2,9 +2,11 @@
   const headersDecoration = [...document.querySelectorAll('.header-decoration')];
   let i = 0;
   return new Promise((res, req) => {
-    headersDecoration[i].classList.add('active');
-    i++;
-    res()
+    setTimeout(() => {
+      headersDecoration[i].classList.add('active');
+      i++;
+      res()
+    }, 500)
   })
   .then(res => {
     return new Promise((res, req) => {
@@ -12,7 +14,7 @@
         headersDecoration[i].classList.add('active');
         i++;
         res()
-      }, 500)
+      }, 900)
     })
   })
   .then(res => {
@@ -20,6 +22,6 @@
       headersDecoration[i].classList.add('active');
       i++;
       return res
-    }, 500)
+    }, 700)
   })
 })()
