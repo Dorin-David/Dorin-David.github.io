@@ -55,6 +55,7 @@ body {
 
 .project-info p {
     width: 90%;
+    min-height: 50px;
     color: #ccc5c5;
     text-align: center;
 }
@@ -242,4 +243,24 @@ background: rgba(34, 33, 33, 0.55);
   }
 }
 
+@media screen and (max-width: 500px){
+  .work-main {
+    width: 400px;
+    height: 200px;
+  }
+
+  .work-main h1 {
+    font-size: 1.8rem;
+  }
+
+  .work-main .gallery-trigger {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .work-main {
+    width: 350px;
+  }
+}
 
