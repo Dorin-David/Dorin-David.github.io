@@ -1,5 +1,4 @@
 const images = {
-    string_of_world: ['main.PNG', 'about.PNG', 'works.PNG'],
     bookshop: ['main.PNG', 'bookshop_big.JPG', 'book_description.JPG', 'cart.JPG', 'order_form.JPG', 'orders_history.JPG'],
     dintorni: ['main.JPG','raccolte.JPG', 'authors.JPG','categories.JPG', 'article.JPG'],
     js_quiz: ['main.JPG', 'sample_1.JPG', 'sample_2.JPG', 'review.JPG', 'styles.JPG', 'sample_3.JPG', ],
